@@ -1,1 +1,8 @@
-insert
+
+
+many_sample_means <- function(vec, n, reps) {
+  
+ sample_means <- replicate(reps, sample_mean(vec, n))
+ return(sample_means)
+
+}

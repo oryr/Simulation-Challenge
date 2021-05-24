@@ -1,1 +1,8 @@
-insert
+
+sample_means_ns <- function(vec, reps, ns) {
+  
+  num <- length(ns)
+  ns_sample_means <- replicate(reps, many_sample_means(vec, ns[1:num], reps))
+  tibble(ns_sample_means) 
+  
+}

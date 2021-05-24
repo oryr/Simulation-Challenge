@@ -1,1 +1,8 @@
-insert
+
+sample_mean <- function(vec, n) {
+  
+  mean <- mean(sample(vec, n))
+  
+  return(mean)
+  
+}
